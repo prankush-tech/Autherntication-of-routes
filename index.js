@@ -23,6 +23,7 @@ if(process.env.NODE_ENV === 'development')
 
 
 //handlebars
+
 app.engine('.hbs',exphbs({defaultLayout: 'main',extname: '.hbs'}));
 app.set('view engine','.hbs');
 
