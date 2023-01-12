@@ -5,7 +5,9 @@ const router = express.Router();
 // get request
 
 router.get('/',(req, res) => {
-    res.send('Login')
+    res.render('login',{
+        layout: 'login',
+    })
 })
 
 
@@ -13,7 +15,7 @@ router.get('/',(req, res) => {
 // get request dashboard
 
 router.get('/dashboard',(req, res) => {
-    res.send('Dashboard')
+    res.render('dashboard')
 })
 
 
